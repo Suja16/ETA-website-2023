@@ -684,6 +684,10 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .row > * {
   flex-shrink: 0;
@@ -693,7 +697,6 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
-
 .col {
   flex: 1 0 0%;
 }
@@ -3998,6 +4001,10 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
@@ -4060,7 +4067,11 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #ffc800;
+  background-color: #4b0082;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 35px;
+  
 }
 
 .nav-fill > .nav-link,
@@ -11408,7 +11419,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11420,28 +11431,37 @@ p {
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .col-md-offset-2 {
   margin-left: 16.66667%;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .myclass{
   font-size: 1.1rem;
   font-weight: 300;
   padding-left: 20px;
   padding-right: 20px;
   color: white;
+  text-align: center;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
 }
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    padding: 1rem 0;
   }
 }
 .btn-xl {
   padding: 1.25rem 2.5rem;
-  background-color: #ffc800;
+  background-color: #4b0082;
+  color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 700;
@@ -11461,7 +11481,7 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   opacity: 1;
-  background-color:;
+  
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11912,12 +11932,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 .container {
   position: relative;
   width: auto;
 }
-.mx-auto  {
+
+.mx-auto .rounded-circle  {
   opacity: 1;
   display: block;
   width: 100%;
@@ -11935,11 +11955,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.container:hover .mx-auto  {
+.container:hover .mx-auto .rounded-circle {
   opacity: 0.3;
 }
-
 .container:hover .middle {
   opacity: 1;
 }
