@@ -1094,3 +1094,19 @@ footer {
 .clear {
   clear: both;
 }
+#mainNav {
+  background-color: #4b0082;
+  justify-content: space-between;
+}
+.container-nav {
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly !important;
+  justify-items: center !important;
+}
+.navbar-nav {
+  margin-left: 0% !important;
+}
+.container-nav a:nth-child(n+1) {
+  justify-content: space-between;
+}
